@@ -1,0 +1,29 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Meu dados</ion-title>
+    <ion-buttons end>
+	    <button ion-button icon-only (click)="logout()">
+	    	<ion-icon class="toolbar-icon" name="log-out"></ion-icon>
+	    </button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<ion-item>
+		<ion-thumbnail item-start>
+			<img src="{{user.fotoUrl}}">
+		</ion-thumbnail>
+		<h2>{{user.nome}}</h2>
+		<p>{{user.email}}</p>
+	</ion-item>
+
+</ion-content>

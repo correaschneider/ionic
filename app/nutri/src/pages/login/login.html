@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<img class="logo" src="assets/imgs/logo.png" >
+
+	<ion-item>
+		<ion-label floating>
+			<ion-icon name="person" md="md-person"></ion-icon> E-mail:
+		</ion-label>
+		<ion-input type="text" #email></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-label floating>
+			<ion-icon name="lock" md="md-lock"></ion-icon> Senha:
+		</ion-label>
+		<ion-input type="password" #password></ion-input>
+	</ion-item>
+
+	<button ion-button block (click)="entrar()">Logar</button>
+	<button ion-button block (click)="entrarComFacebook()" icon-start>
+		<ion-icon name="logo-facebook" md="logo-facebook"></ion-icon>
+		Login com o Facebook
+	</button>
+	<p><a (click)="register()" class="textos">Criar uma conta</a></p>
+	<p><a (click)="recover()" class="textos">Esqueci minha senha</a></p>
+
+</ion-content>

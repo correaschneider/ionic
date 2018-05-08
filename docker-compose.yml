@@ -11,5 +11,5 @@ services:
             - 8100:8100
             - 35729:35729
             - 53703:53703
-        command: bash -c "cd /stay-alive; node index"
+        command: bash -c "cd /stay-alive; node index" # Optei por acessar o container e rodar o "ionic serve --lab", pois estou usando este projeto para testes e conhecer o Ionic
         # command: bash -c "cd /app/myApp; ionic serve --lab"
